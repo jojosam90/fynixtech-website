@@ -16,10 +16,10 @@ const gradients = [
 
 function SolutionImage({ image }: { image?: string }) {
   const loaded = useImagePreload(image);
-  if (!image || !loaded) return <div className="flex-1" />;
+  if (!image || !loaded) return <div className="h-[200px] md:h-[260px]" />;
 
   return (
-    <div className="my-4 min-h-0 flex-1 overflow-hidden">
+    <div className="my-4 h-[200px] shrink-0 overflow-hidden md:h-[260px]">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={image}
