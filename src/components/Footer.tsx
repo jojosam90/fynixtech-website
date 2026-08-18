@@ -34,14 +34,13 @@ export default function Footer() {
   const [otherDetail, setOtherDetail] = useState("");
 
   return (
-    <footer id="contact" className="-mt-px flex min-h-screen flex-col bg-white text-text-body">
-      <div className="mx-auto flex w-full max-w-[1400px] flex-1 flex-col px-6 pt-20 pb-14 md:px-12 md:pt-28 md:pb-20">
-        <div className="flex flex-1 flex-col justify-center">
+    <footer id="contact" className="-mt-px flex flex-col bg-white text-text-body">
+      <div className="mx-auto flex w-full max-w-[1400px] flex-col px-6 pt-12 pb-8 md:px-12 md:pt-16 md:pb-10">
         <h2 className="text-center text-xl font-bold text-text-dark md:text-3xl">
           {t({ en: "Contact Us", zh: "联系我们" })}
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-12 md:mt-20 md:grid-cols-[1fr_1.1fr] md:items-start">
+        <div className="mt-8 grid grid-cols-1 gap-12 md:mt-10 md:grid-cols-[1fr_1.1fr] md:items-start">
           {/* Brand + contact */}
           <div className="-ml-4 md:ml-0">
             <Logo markClassName="h-8 w-8 md:h-9 md:w-9" textClassName="text-lg md:text-xl" imgClassName="h-11 md:h-14 w-auto" />
@@ -226,9 +225,8 @@ export default function Footer() {
             )}
           </div>
         </div>
-        </div>
 
-        <div className="mt-14 border-t border-line pt-6 text-center text-sm md:text-left">
+        <div className="mt-8 border-t border-line pt-6 text-center text-sm md:text-left">
           <p>
             © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
           </p>
