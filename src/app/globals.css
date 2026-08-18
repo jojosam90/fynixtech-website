@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #222222;
+
+  --brand-blue: #0146ad;
+  --brand-blue-dark: #013a8f;
+  --brand-blue-light: #e8f0fc;
+  --brand-yellow: #ffb900;
+  --text-dark: #222222;
+  --text-body: #666666;
+  --text-muted: #999999;
+  --surface-soft: #f5f6f8;
+  --surface-alt: #f7f8fa;
+  --line: #e5e5e5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-dark: var(--brand-blue-dark);
+  --color-brand-blue-light: var(--brand-blue-light);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-text-dark: var(--text-dark);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-alt: var(--surface-alt);
+  --color-line: var(--line);
+  --font-sans: var(--font-poppins);
+  --font-cn: var(--font-noto-sc);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-noto-sc), var(--font-poppins), "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.08);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.08);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.8s ease-in-out infinite;
+}
+
