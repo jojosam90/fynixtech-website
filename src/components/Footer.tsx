@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
 
           {/* Consultation form */}
-          <div className="rounded-2xl bg-white p-6 text-text-dark shadow-[0_16px_40px_rgba(0,0,0,0.25)] md:-ml-8 md:p-8">
+          <div className="rounded-2xl bg-white p-6 text-text-dark shadow-[0_16px_40px_rgba(0,0,0,0.25)] md:-ml-20 md:max-w-[480px] md:p-6">
             <h3 className="text-xl font-bold text-text-dark md:text-2xl">
               {t({ en: "Schedule a Free Consultation", zh: "预约免费咨询" })}
             </h3>
