@@ -34,7 +34,7 @@ export default function Footer() {
   const [otherDetail, setOtherDetail] = useState("");
 
   return (
-    <footer id="contact" className="-mt-px flex flex-col bg-white text-text-body">
+    <footer id="contact" className="-mt-px flex scroll-mt-16 flex-col bg-white text-text-body md:scroll-mt-20">
       <div className="mx-auto flex w-full max-w-[1400px] flex-col px-6 pt-12 pb-8 md:px-12 md:pt-16 md:pb-10">
         <h2 className="text-center text-xl font-bold text-text-dark md:text-3xl">
           {t({ en: "Contact Us", zh: "联系我们" })}
@@ -226,7 +226,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-line pt-6 text-center text-sm md:text-left">
+        <div className="mt-8 pt-6 text-center text-sm md:text-left">
           <p>
             © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
           </p>
