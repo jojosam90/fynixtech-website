@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/echo "Placeholder deployment - real build/start steps pending Node.js App setup confirmation."
