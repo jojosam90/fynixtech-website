@@ -226,7 +226,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 text-center text-sm md:text-left">
+        <div className="mt-20 pt-6 text-center text-sm md:text-left">
           <p>
             © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
           </p>
