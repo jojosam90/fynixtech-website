@@ -1,4 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/echo "Placeholder deployment - real build/start steps pending Node.js App setup confirmation."
+    - export DEPLOYPATH=/home/jojosam/public_html/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R out/. $DEPLOYPATH

@@ -129,7 +129,7 @@ export default function Footer() {
                       ? `${t(inquiryOptions.find((o) => o.value === "other")!.label)}: ${otherDetail}`
                       : t(inquiryOptions.find((o) => o.value === inquiryType)!.label);
                   try {
-                    const res = await fetch("/api/contact", {
+                    const res = await fetch("/api/contact.php", {
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({

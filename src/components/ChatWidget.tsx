@@ -178,7 +178,7 @@ export default function ChatWidget() {
               setSending(true);
               setSendError(false);
               try {
-                const res = await fetch("/api/callback", {
+                const res = await fetch("/api/callback.php", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({ phone: `+65 ${phone.trim()}` }),

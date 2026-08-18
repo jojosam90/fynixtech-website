@@ -15,7 +15,8 @@
 
 # next.js
 /.next/
-/out/
+# /out/ is intentionally committed — it's the static export deployed to
+# cPanel via Git, which has no Node.js runtime to build it server-side.
 
 # production
 /build
@@ -33,6 +34,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
+
+# PHP secrets (real API key) — never commit; deploy step never touches it
+public/api/_config.php
 
 # vercel
 .vercel
