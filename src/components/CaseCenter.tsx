@@ -37,7 +37,7 @@ export function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <h2 className={`mt-2 text-3xl font-bold md:text-5xl ${light ? "text-white" : "text-text-dark"}`}>
+      <h2 className={`mt-2 text-xl font-bold md:text-3xl ${light ? "text-white" : "text-text-dark"}`}>
         {t(title)}
       </h2>
       {subtitle && (
