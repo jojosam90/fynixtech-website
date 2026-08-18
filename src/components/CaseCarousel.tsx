@@ -64,7 +64,7 @@ export default function CaseCarousel() {
         <h3 className="text-base font-semibold text-text-dark md:text-lg">{t(active.title)}</h3>
       </div>
 
-      <div className="mt-5 flex justify-center gap-2">
+      <div className="mt-3 flex justify-center gap-2">
         {caseItems.map((item, i) => (
           <button
             key={item.title.en}
@@ -77,7 +77,7 @@ export default function CaseCarousel() {
         ))}
       </div>
 
-      <div className="relative mt-4 md:mt-6">
+      <div className="relative mt-2 md:mt-3">
         <div className="relative h-[440px] overflow-hidden md:h-[620px]">
           {/* Background deck: flat, parallel screenshot cards, no bezel */}
           {caseItems.map((item, i) => {
