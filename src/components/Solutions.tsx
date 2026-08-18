@@ -19,7 +19,7 @@ function SolutionImage({ image }: { image?: string }) {
   if (!image || !loaded) return <div className="flex-1" />;
 
   return (
-    <div className="my-4 flex-1 overflow-hidden">
+    <div className="my-4 min-h-0 flex-1 overflow-hidden">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={image}
