@@ -35,7 +35,7 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="-mt-px flex scroll-mt-16 flex-col bg-white text-text-body md:scroll-mt-20">
-      <div className="mx-auto flex w-full max-w-[1400px] flex-col px-6 pt-12 pb-8 md:px-12 md:pt-16 md:pb-10">
+      <div className="mx-auto flex w-full max-w-[1400px] flex-col px-6 pt-16 pb-8 md:px-12 md:pt-24 md:pb-10">
         <h2 className="text-center text-xl font-bold text-text-dark md:text-3xl">
           {t({ en: "Contact Us", zh: "联系我们" })}
         </h2>
