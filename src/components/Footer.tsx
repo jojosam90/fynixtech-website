@@ -100,6 +100,10 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            <p className="mt-8 text-sm md:ml-4">
+              © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
+            </p>
           </div>
 
           {/* Consultation form */}
@@ -224,12 +228,6 @@ export default function Footer() {
               </form>
             )}
           </div>
-        </div>
-
-        <div className="mt-20 pt-6 text-center text-sm md:text-left">
-          <p>
-            © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
-          </p>
         </div>
       </div>
     </footer>
