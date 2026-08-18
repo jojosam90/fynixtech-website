@@ -7,11 +7,11 @@ import Logo from "./Logo";
 import { IconPhone, IconMail, IconLocationPin, IconGoogle, IconFacebook, IconInstagram, IconLinkedin, IconGithub } from "./icons";
 
 const socialLinks = [
-  { name: "Google", href: "https://google.com", icon: IconGoogle, className: "bg-white border border-line" },
-  { name: "Facebook", href: "https://facebook.com", icon: IconFacebook, className: "bg-[#1877F2] text-white" },
-  { name: "Instagram", href: "https://instagram.com", icon: IconInstagram, className: "bg-gradient-to-tr from-[#FEDA75] via-[#D62976] to-[#4F5BD5] text-white" },
-  { name: "LinkedIn", href: "https://linkedin.com", icon: IconLinkedin, className: "bg-[#0A66C2] text-white" },
-  { name: "GitHub", href: "https://github.com", icon: IconGithub, className: "bg-[#181717] text-white" },
+  { name: "Google", icon: IconGoogle, className: "bg-white border border-line" },
+  { name: "Facebook", icon: IconFacebook, className: "bg-[#1877F2] text-white" },
+  { name: "Instagram", icon: IconInstagram, className: "bg-gradient-to-tr from-[#FEDA75] via-[#D62976] to-[#4F5BD5] text-white" },
+  { name: "LinkedIn", icon: IconLinkedin, className: "bg-[#0A66C2] text-white" },
+  { name: "GitHub", icon: IconGithub, className: "bg-[#181717] text-white" },
 ];
 
 const inquiryOptions: { value: string; label: Bi }[] = [
@@ -88,16 +88,14 @@ export default function Footer() {
 
             <div className="mt-8 flex items-center gap-3 md:ml-4">
               {socialLinks.map((social) => (
-                <a
+                <button
                   key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  type="button"
                   aria-label={social.name}
                   className={`flex h-11 w-11 items-center justify-center rounded-full transition-transform hover:scale-105 ${social.className}`}
                 >
                   <social.icon className="h-5 w-5" />
-                </a>
+                </button>
               ))}
             </div>
 
