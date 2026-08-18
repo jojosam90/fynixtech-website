@@ -10,7 +10,7 @@ export default function CaseCenter() {
         <SectionHeading title={{ en: "Case Center", zh: "案例中心" }} />
 
         {/* 3D phone carousel */}
-        <div className="mt-10">
+        <div className="mt-4">
           <CaseCarousel />
         </div>
       </div>
