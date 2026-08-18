@@ -101,7 +101,7 @@ export default function Footer() {
               ))}
             </div>
 
-            <p className="mt-8 text-sm md:ml-4">
+            <p className="mt-16 text-sm md:ml-4">
               © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
             </p>
           </div>
