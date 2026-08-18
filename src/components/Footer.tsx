@@ -37,7 +37,7 @@ export default function Footer() {
     <footer id="contact" className="-mt-px flex min-h-screen flex-col bg-white text-text-body">
       <div className="mx-auto flex w-full max-w-[1400px] flex-1 flex-col px-6 pt-20 pb-14 md:px-12 md:pt-28 md:pb-20">
         <div className="flex flex-1 flex-col justify-center">
-        <h2 className="text-center text-3xl font-bold text-text-dark md:text-5xl">
+        <h2 className="text-center text-xl font-bold text-text-dark md:text-3xl">
           {t({ en: "Contact Us", zh: "联系我们" })}
         </h2>
 
