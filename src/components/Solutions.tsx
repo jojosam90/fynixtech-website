@@ -43,7 +43,7 @@ export default function Solutions() {
       <div className="mx-auto w-full max-w-[1400px] px-6 md:px-12">
         <SectionHeading title={{ en: "Solutions", zh: "解决方案" }} />
 
-        <div className="mt-16 flex flex-col gap-4 md:mt-4 md:h-[660px] md:flex-row md:gap-3">
+        <div className="mt-16 flex flex-col gap-4 md:mt-4 md:h-[540px] md:flex-row md:gap-3">
           {solutions.map((sol, i) => {
             const Icon = icons[i];
             const isActive = active === i;
