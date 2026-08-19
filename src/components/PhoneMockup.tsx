@@ -1,6 +1,5 @@
 "use client";
 
-import { IPhoneX } from "react-device-frames";
 import { useImagePreload } from "@/lib/useImagePreload";
 import { buildPlaceholderScreenshot } from "@/lib/placeholderScreenshot";
 
@@ -19,12 +18,14 @@ export default function PhoneMockup({
   const screenshot = image && loaded ? image : buildPlaceholderScreenshot(gradientFrom, gradientTo);
 
   return (
-    <div className={`aspect-[1305/2598] ${className}`}>
-      {/* key forces a full remount on every screenshot change instead of an
-          in-place href update — WebKit/Safari doesn't reliably repaint an
-          SVG pattern when the <image> it references changes href dynamically,
-          so a full remount sidesteps that browser bug entirely. */}
-      <IPhoneX key={screenshot} screenshot={screenshot} />
+    <div
+      className={`relative aspect-[1305/2598] rounded-[15%] bg-[#111214] p-[3%] shadow-[0_20px_50px_rgba(0,0,0,0.35)] ${className}`}
+    >
+      <div className="relative h-full w-full overflow-hidden rounded-[12%] bg-white">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={screenshot} alt="" className="h-full w-full object-cover" />
+      </div>
+      <div className="absolute left-1/2 top-[3.6%] h-[3%] w-[30%] -translate-x-1/2 rounded-full bg-[#111214]" />
     </div>
   );
 }
