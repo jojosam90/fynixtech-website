@@ -10,7 +10,7 @@ export default function CaseCenter() {
         <SectionHeading title={{ en: "Case Center", zh: "案例中心" }} />
 
         {/* 3D phone carousel */}
-        <div className="mt-1 flex flex-1 flex-col justify-center md:mt-0 md:flex-none md:justify-start">
+        <div className="mt-6 flex flex-1 flex-col md:mt-0 md:flex-none">
           <CaseCarousel />
         </div>
       </div>
