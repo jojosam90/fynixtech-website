@@ -86,7 +86,7 @@ export default function CaseCarousel() {
         ))}
       </div>
 
-      <div className="relative mt-1 md:mt-2">
+      <div className="relative mt-8 md:mt-2">
         <div className="relative h-[320px] overflow-hidden md:h-[620px]">
           {/* Background deck: flat, parallel screenshot cards, no bezel */}
           {caseItems.map((item, i) => {
