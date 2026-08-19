@@ -5,7 +5,7 @@ import CaseCarousel from "./CaseCarousel";
 
 export default function CaseCenter() {
   return (
-    <section id="cases" className="flex min-h-screen flex-col justify-center bg-white py-16 md:py-24">
+    <section id="cases" className="flex min-h-screen flex-col bg-white py-16 md:py-24">
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <SectionHeading title={{ en: "Case Center", zh: "案例中心" }} />
 
