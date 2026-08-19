@@ -44,13 +44,13 @@ export default function Footer() {
           {/* Brand + contact */}
           <div className="-ml-4 md:ml-0">
             <Logo markClassName="h-8 w-8 md:h-9 md:w-9" textClassName="text-lg md:text-xl" imgClassName="h-11 md:h-14 w-auto" />
-            <p className="mt-4 max-w-xs text-lg font-semibold leading-relaxed md:ml-4">
+            <p className="mt-4 ml-4 max-w-xs text-lg font-semibold leading-relaxed">
               {t({
                 en: "A software and hardware development partner for government, enterprise, and individual clients.",
                 zh: "为政府、企业、个人提供软硬件一站式应用解决方案的开发服务商。",
               })}
             </p>
-            <ul className="mt-6 space-y-4 md:ml-4">
+            <ul className="mt-6 ml-4 space-y-4">
               <li className="flex items-start gap-3">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-blue-light">
                   <IconLocationPin className="h-5 w-5 text-brand-blue" />
@@ -86,7 +86,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            <div className="mt-8 flex items-center gap-3 md:ml-4">
+            <div className="mt-8 ml-4 flex items-center gap-3">
               {socialLinks.map((social) => (
                 <button
                   key={social.name}
