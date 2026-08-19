@@ -5,6 +5,7 @@ import { useLanguage } from "@/lib/i18n";
 import { caseItems } from "@/lib/content";
 import FanCard from "./FanCard";
 import PhoneMockup from "./PhoneMockup";
+import { preloadImage } from "@/lib/useImagePreload";
 import { IconChevronLeft, IconChevronRight } from "./icons";
 
 const swatches = [
@@ -49,6 +50,14 @@ export default function CaseCarousel() {
     const id = setInterval(() => setIndex((v) => (v + 1) % total), 2200);
     return () => clearInterval(id);
   }, [paused, total]);
+
+  // Warm the image cache for every case up front, so the auto-advancing
+  // carousel never shows the placeholder while a screenshot is still loading.
+  useEffect(() => {
+    caseItems.forEach((item) => {
+      if (item.image) preloadImage(item.image);
+    });
+  }, []);
 
   const goto = (i: number) => setIndex(((i % total) + total) % total);
   const active = caseItems[index];
