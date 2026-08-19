@@ -6,11 +6,11 @@ import CaseCarousel from "./CaseCarousel";
 export default function CaseCenter() {
   return (
     <section id="cases" className="flex min-h-screen flex-col bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+      <div className="mx-auto flex w-full max-w-[1400px] flex-1 flex-col px-6 md:px-12">
         <SectionHeading title={{ en: "Case Center", zh: "案例中心" }} />
 
         {/* 3D phone carousel */}
-        <div className="mt-1">
+        <div className="mt-1 flex flex-1 flex-col justify-center md:mt-0 md:flex-none md:justify-start">
           <CaseCarousel />
         </div>
       </div>
