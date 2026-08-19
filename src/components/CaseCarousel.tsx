@@ -107,7 +107,7 @@ export default function CaseCarousel() {
           })}
 
           {/* Fixed foreground phone frame: shows the active case's screenshot */}
-          <div className="absolute inset-0 m-auto h-[400px] w-[196px] md:h-[580px] md:w-[278px]" style={{ zIndex: 200 }}>
+          <div className="absolute inset-0 m-auto w-[196px] md:w-[278px]" style={{ zIndex: 200 }}>
             <PhoneMockup image={active.image} gradientFrom={activeFrom} gradientTo={activeTo} />
           </div>
         </div>
