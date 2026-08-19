@@ -78,7 +78,7 @@ export default function CaseCarousel() {
       </div>
 
       <div className="relative mt-1 md:mt-2">
-        <div className="relative h-[320px] overflow-hidden md:h-[620px]">
+        <div className="relative h-[480px] overflow-hidden md:h-[620px]">
           {/* Background deck: flat, parallel screenshot cards, no bezel */}
           {caseItems.map((item, i) => {
             const offset = getOffset(i, index, total);
@@ -93,7 +93,7 @@ export default function CaseCarousel() {
                 key={item.title.en}
                 onClick={() => goto(i)}
                 aria-label={t(item.title)}
-                className="absolute inset-0 m-auto h-[290px] w-[142px] appearance-none border-0 bg-transparent p-0 outline-none transition-transform duration-700 ease-out md:h-[580px] md:w-[278px]"
+                className="absolute inset-0 m-auto h-[430px] w-[210px] appearance-none border-0 bg-transparent p-0 outline-none transition-transform duration-700 ease-out md:h-[580px] md:w-[278px]"
                 style={{
                   transform: `translateX(${translateX}px) scale(${scale})`,
                   opacity,
@@ -107,7 +107,7 @@ export default function CaseCarousel() {
           })}
 
           {/* Fixed foreground phone frame: shows the active case's screenshot */}
-          <div className="absolute inset-0 m-auto w-[142px] md:w-[278px]" style={{ zIndex: 200 }}>
+          <div className="absolute inset-0 m-auto w-[210px] md:w-[278px]" style={{ zIndex: 200 }}>
             <PhoneMockup image={active.image} gradientFrom={activeFrom} gradientTo={activeTo} />
           </div>
         </div>
