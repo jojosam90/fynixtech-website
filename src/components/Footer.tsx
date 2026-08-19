@@ -99,7 +99,7 @@ export default function Footer() {
               ))}
             </div>
 
-            <p className="mt-16 text-sm md:ml-4">
+            <p className="mt-16 hidden text-sm md:ml-4 md:block">
               © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
             </p>
           </div>
@@ -227,6 +227,10 @@ export default function Footer() {
             )}
           </div>
         </div>
+
+        <p className="mt-8 text-center text-sm md:hidden">
+          © {new Date().getFullYear()} {t(brand)} Pte Ltd. {t({ en: "All rights reserved.", zh: "保留所有权利。" })}
+        </p>
       </div>
     </footer>
   );
