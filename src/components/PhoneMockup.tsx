@@ -20,7 +20,11 @@ export default function PhoneMockup({
 
   return (
     <div className={`aspect-[1305/2598] ${className}`}>
-      <IPhoneX screenshot={screenshot} />
+      {/* key forces a full remount on every screenshot change instead of an
+          in-place href update — WebKit/Safari doesn't reliably repaint an
+          SVG pattern when the <image> it references changes href dynamically,
+          so a full remount sidesteps that browser bug entirely. */}
+      <IPhoneX key={screenshot} screenshot={screenshot} />
     </div>
   );
 }
