@@ -65,7 +65,7 @@ export default function CaseCarousel() {
 
   return (
     <div
-      className="relative mx-auto max-w-[1180px]"
+      className="relative mx-auto w-full max-w-[1180px]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
