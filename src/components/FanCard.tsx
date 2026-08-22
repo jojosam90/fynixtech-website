@@ -7,7 +7,7 @@ export default function FanCard({ gradient, image }: { gradient: string; image?:
   const showImage = Boolean(image) && loaded;
 
   return (
-    <div className="h-full w-full overflow-hidden rounded-[9%] bg-white shadow-[0_20px_40px_rgba(0,0,0,0.15)]">
+    <div className="h-full w-full overflow-hidden rounded-[9%] bg-white">
       {showImage ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={image} alt="" className="h-full w-full object-cover" />

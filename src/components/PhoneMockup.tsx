@@ -19,7 +19,7 @@ export default function PhoneMockup({
 
   return (
     <div
-      className={`relative aspect-[1305/2598] rounded-[15%] bg-[#111214] p-[3%] shadow-[0_20px_50px_rgba(0,0,0,0.35)] ${className}`}
+      className={`relative aspect-[1305/2598] rounded-[15%] bg-[#111214] p-[3%] ${className}`}
     >
       <div className="relative h-full w-full overflow-hidden rounded-[12%] bg-white">
         {/* eslint-disable-next-line @next/next/no-img-element */}
